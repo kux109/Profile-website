@@ -8,7 +8,7 @@ function App() {
   const linkedinUrl = "https://linkedin.com/in/kush1499"
   const githubUrl = "https://github.com/kux109"
   const leetcodeUrl = "https://leetcode.com/kush1499"
-  const discordUrl = "home"
+  const discordUrl = "https://discord.gg/p8Ars9xF"
   const homeUrl = "home"
   const resumeUrl = "https://drive.google.com/file/d/1zW3y7dErg8JIbvj2bG1Wxh70xNwCloqO/view?usp=sharing" // Replace with your Google Drive link
 
@@ -406,10 +406,6 @@ function App() {
             <a href={discordUrl} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-warm-beige-700 hover:text-warm-beige-900 transition-colors">
               <FaDiscord className="text-sm" />
               <span>Discord</span>
-            </a>
-            <a href={""} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-warm-beige-700 hover:text-warm-beige-900 transition-colors">
-              <FaGlobe className="text-sm" />
-              <span>Website</span>
             </a>
             <a href={resumeUrl} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-warm-beige-700 hover:text-warm-beige-900 transition-colors">
               <FaFileDownload className="text-sm" />
