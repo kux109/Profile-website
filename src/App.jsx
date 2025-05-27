@@ -23,14 +23,14 @@ function App() {
   // Dynamic titles that will rotate after "Software Engineer &"
   const titles = [
     "Full Stack Developer",
-    "Backend Specialist",
-    "Frontend Expert", 
-    "DevOps Engineer",
-    "ML Engineer",
-    "Cloud Architect",
-    "Data Engineer",
-    "System Designer",
-    "Security Engineer"
+    "Backend",
+    "Frontend", 
+    "DevOps",
+    "Machine Learning",
+    "Cloud",
+    "Data Engineering",
+    "System Design",
+    "Security"
   ]
 
   // Typewriter effect
@@ -64,44 +64,44 @@ function App() {
   // All projects data
   const allProjects = [
     {
-      name: "E-Commerce Microservices Platform",
-      description: "Scalable microservices architecture handling 10K+ concurrent users with event-driven design and distributed caching.",
-      tech: "Spring Boot, React, MongoDB, Docker, AWS"
+      name: "Adversarial Neural Network Testing on CIFAR-10",
+      description: "Trained a neural network on the CIFAR-10 dataset and introduced adversarial inputs to evaluate its robustness. Demonstrated how slight perturbations in the dataset could drastically reduce model accuracy.",
+      tech: "Python, TensorFlow/PyTorch, NumPy, Matplotlib, Jupyter"
     },
     {
-      name: "ML Recommendation Engine", 
-      description: "Machine learning system using collaborative filtering achieving 85% accuracy in user preference prediction.",
-      tech: "Python, TensorFlow, FastAPI, Redis, PostgreSQL"
+      name: "ETL Pipeline with Kafka and Multithreading", 
+      description: "Engineered an ETL system in Spring Boot to scrape and process large datasets, using Kafka streams for pipeline flow. Applied multithreading and optimization techniques to improve ingestion speed and loaded data into MySQL.",
+      tech: "Java, Spring Boot, Kafka, MySQL"
     },
     {
-      name: "Real-time Chat Application",
-      description: "WebSocket-based messaging application with encryption supporting 1000+ concurrent connections.",
-      tech: "Node.js, Socket.io, React, MongoDB, JWT"
+      name: "Context-Aware WAF for XSS Mitigation",
+      description: "Designed a Web Application Firewall in Python to detect and block cross-site scripting (XSS) attacks based on context-aware rules. Integrated it into Django and Flask applications to improve security posture without affecting app performance.",
+      tech: "Python, Django, Flask, SQLite"
     },
     {
-      name: "DevOps CI/CD Pipeline",
-      description: "Automated deployment pipeline with infrastructure as code, reducing deployment time by 70%.",
-      tech: "Jenkins, Docker, Kubernetes, AWS, Terraform"
+      name: "Serverless Data Pipeline on AWS",
+      description: "Designed a scalable serverless data pipeline using AWS Lambda, S3, and DynamoDB to process terabytes of incoming data. Integrated monitoring and alerting with CloudWatch, resulting in reduced infrastructure management overhead.",
+      tech: "AWS Lambda, S3, DynamoDB, API Gateway, CloudWatch"
     },
     {
-      name: "Distributed Task Scheduler",
-      description: "High-performance task scheduling system with load balancing and fault tolerance for enterprise workloads.",
-      tech: "Java, Apache Kafka, Redis, Kubernetes, Prometheus"
+      name: "GAN for Handwritten Digit Generation",
+      description: "Built a Generative Adversarial Network (GAN) with custom generator and discriminator models on the MNIST dataset. Achieved 90%+ discriminator accuracy and realistic digit outputs within 50 epochs.",
+      tech: "Python, TensorFlow/Keras, MNIST dataset"
     },
     {
-      name: "Computer Vision Analytics",
-      description: "Real-time image processing pipeline for object detection and classification with 95% accuracy.",
-      tech: "Python, OpenCV, YOLO, TensorFlow, CUDA"
+      name: "Wikipedia Knowledge Graph with GNN",
+      description: "Used the WikiCS dataset to construct a knowledge graph and trained a Graph Neural Network (GNN) to compute centrality, PageRank, and detect communities without relying on traditional algorithms. Improved insights into graph structures via machine learning techniques.",
+      tech: "Python, PyTorch Geometric, NetworkX, WikiCS"
     },
     {
-      name: "Blockchain Voting System",
-      description: "Secure and transparent voting platform using smart contracts with immutable audit trails.",
-      tech: "Solidity, Web3.js, React, IPFS, MetaMask"
+      name: "Random Forest for Cyberattack Classification",
+      description: "Applied Random Forest classification on the UNSW-NB15 dataset to categorize different network traffic types. Focused on improving detection accuracy and model reliability for intrusion detection systems.",
+      tech: "Python, scikit-learn, pandas"
     },
     {
-      name: "IoT Monitoring Dashboard",
-      description: "Real-time monitoring system for IoT devices with predictive maintenance and anomaly detection.",
-      tech: "Node.js, InfluxDB, Grafana, MQTT, Python"
+      name: "WebRTC-based Video KYC Platform",
+      description: "Developed a WebRTC-based video calling system at Paytm for smooth customer KYC verification. Ensured low-latency performance and seamless user experience under variable network conditions.",
+      tech: "JavaScript, Node.js, WebRTC"
     },
     {
       name: "Social Media Analytics Tool",
@@ -109,19 +109,14 @@ function App() {
       tech: "Python, Apache Spark, Elasticsearch, React, D3.js"
     },
     {
-      name: "Cloud Infrastructure Automation",
-      description: "Infrastructure as code solution for multi-cloud deployment with automated scaling and monitoring.",
-      tech: "Terraform, Ansible, AWS, GCP, Prometheus"
+      name: "Memory Management Module in C",
+      description: "Created a memory management tool in C with functionalities for allocate, deallocate, reset, and usage stats. Used GDB to debug and optimize the system, achieving a 30% performance boost.",
+      tech: " C, GDB"
     },
     {
-      name: "Financial Trading Bot",
-      description: "Algorithmic trading system with machine learning models for market prediction and risk management.",
-      tech: "Python, Pandas, Scikit-learn, Alpha Vantage API, PostgreSQL"
-    },
-    {
-      name: "Video Streaming Platform",
-      description: "Scalable video streaming service with adaptive bitrate streaming and content delivery optimization.",
-      tech: "FFmpeg, HLS, AWS CloudFront, React, Node.js"
+      name: "Secure File System with User and File Management",
+      description: "Built a secure file system in Java that supports user creation and file operations including read, write, and delete. The goal was to enforce access control and ensure secure handling of data within a simulated environment.",
+      tech: "Java"
     }
   ]
 
@@ -330,7 +325,20 @@ function App() {
       <section id="projects" className="py-10 px-2 sm:py-20 sm:px-6 border-t border-warm-beige-200">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-center mb-8 sm:mb-12 gap-4 sm:gap-0">
-            <h2 className="text-2xl sm:text-3xl font-light text-warm-beige-900">Projects</h2>
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-light text-warm-beige-900">Projects</h2>
+              <p className="text-sm text-warm-beige-500 mt-1">
+                All projects available on my{' '}
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-warm-beige-700 underline hover:text-warm-beige-900"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
             {/* Hidden Cross Button - only visible when more than 4 projects are shown */}
             {visibleProjects > 4 && (
               <button
