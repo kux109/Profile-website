@@ -203,7 +203,7 @@ function App() {
             </div>
             <div className="w-40 h-40 xs:w-48 xs:h-48 sm:w-64 sm:h-64 bg-warm-beige-200 border border-warm-beige-300 flex items-center justify-center mx-auto md:mx-0 mt-8 md:mt-0">
               <img 
-                src="/Profile-website/photo.jpg"
+                src="/Profile-website/photo.webp"
                 alt="Me!"
                 className="w-full h-full object-cover"
               />
