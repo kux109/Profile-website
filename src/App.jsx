@@ -4,7 +4,7 @@ import { SiLeetcode } from 'react-icons/si'
 
 function App() {
   // Contact info - replace with your actual details
-  const email = "kushagra147@gmail.com"
+  const email = "kush147.tech@gmail.com"
   const linkedinUrl = "https://linkedin.com/in/kush1499"
   const githubUrl = "https://github.com/kux109"
   const leetcodeUrl = "https://leetcode.com/kush1499"
