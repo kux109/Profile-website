@@ -10,7 +10,7 @@ function App() {
   const leetcodeUrl = "https://leetcode.com/kush1499"
   const discordUrl = "https://discord.gg/p8Ars9xF"
   const homeUrl = "home"
-  const resumeUrl = "https://drive.google.com/file/d/1zW3y7dErg8JIbvj2bG1Wxh70xNwCloqO/view?usp=sharing" // Replace with your Google Drive link
+  const resumeUrl = "https://drive.google.com/file/d/1csYoMlHr2YiZasy18uuwGbY4jmtHmEUD/view" // Replace with your Google Drive link
 
   // Projects state
   const [visibleProjects, setVisibleProjects] = useState(4)
@@ -198,7 +198,9 @@ function App() {
               
               <p className="text-warm-beige-600 max-w-lg leading-relaxed">
                 Building thoughtful digital experiences with clean code and user-centered design. 
-                Currently exploring modern web technologies and scalable architectures.
+                Currently exploring modern web technologies and scalable architectures. <br />
+                <br/>
+                Masters Thesis - Improving MiniSat Solver via Online Reinforcement Learning
               </p>
             </div>
             <div className="w-40 h-40 xs:w-48 xs:h-48 sm:w-64 sm:h-64 bg-warm-beige-200 border border-warm-beige-300 flex items-center justify-center mx-auto md:mx-0 mt-8 md:mt-0">
@@ -229,7 +231,7 @@ function App() {
               <div>
                 <h3 className="text-warm-beige-800 font-medium mb-3">Languages</h3>
                 <p className="text-warm-beige-600 text-sm leading-relaxed">
-                  C/C++, Java, JavaScript, Python, TypeScript, SQL, Bash, Golang
+                  Java, Python, C, C++, Go, JavaScript, Bash
                 </p>
               </div>
               <div>
@@ -238,12 +240,12 @@ function App() {
                   Spring Boot, React, Angular, Next.js, Node.js, Express, MySQL, PostgreSQL, MongoDB, AWS, Docker 
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="text-warm-beige-800 font-medium mb-3">Frameworks</h3>
                 <p className="text-warm-beige-600 text-sm leading-relaxed">
                   TensorFlow, PyTorch, CUDA, OpenMP, OpenCL, TensorRT, NCCL
                 </p>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-warm-beige-800 font-medium mb-3">Tools</h3>
                 <p className="text-warm-beige-600 text-sm leading-relaxed">
@@ -265,7 +267,7 @@ function App() {
                 title: "Graduate Assistant",
                 company: "Pennsylvania State University, CSE Department",
                 period: "Aug 2024 - Present",
-                description: "Teaching Assistant CMPSC-132 for Programming and Computation II - Led recitations, held oﬃce hours, guided exam preparation, and graded assignments to support student learning "
+                description: "Teaching Assistant CMPSC-475 for Applications Development (Swift) - Led recitations, held oﬃce hours, guided exam preparation, and graded assignments to support student learning "
               },
               {
                 title: "Software Engineer", 
